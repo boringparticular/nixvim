@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
-    ./plugins
     ./colorscheme.nix
     ./options.nix
+    ./plugins
   ];
 
   keymaps = [
