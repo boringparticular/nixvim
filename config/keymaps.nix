@@ -86,5 +86,30 @@
       action = "<C-w><C-k>";
       options.desc = "Move focus to the upper window";
     }
+
+    {
+      key = "n";
+      action = "nzzzv";
+      mode = "n";
+      options.desc = "Move to next search result and center line";
+    }
+    {
+      key = "N";
+      action = "Nzzzv";
+      mode = "n";
+      options.desc = "Move to previous search result and center line";
+    }
+    {
+      key = "<C-d>";
+      action = "<C-d>zz";
+      mode = "n";
+      options.desc = "Scroll half page down and center line";
+    }
+    {
+      key = "<C-u>";
+      action = "<C-u>zz";
+      mode = "n";
+      options.desc = "Scroll half page up and center line";
+    }
   ];
 }
