@@ -2,7 +2,15 @@
   plugins.lsp = {
     enable = true;
     servers = {
+      clangd.enable = true;
+      gopls.enable = true;
+      html.enable = true;
+      htmx.enable = true;
       nixd.enable = true;
+      pyright.enable = true;
+      svelte.enable = true;
+      tailwindcss.enable = true;
+      tsserver.enable = true;
       lua-ls = {
         enable = true;
         extraOptions.settings = {
