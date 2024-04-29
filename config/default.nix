@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./plugins
+    ./colorscheme.nix
   ];
   colorschemes.catppuccin = {
     enable = true;
