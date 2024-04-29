@@ -42,6 +42,10 @@
           action = "rename";
           desc = "LSP: [R]e[n]ame";
         };
+        "<F2>" = {
+          action = "rename";
+          desc = "LSP: Rename";
+        };
         "<leader>ca" = {
           action = "code_action";
           desc = "LSP: [C]ode [A]ction";
