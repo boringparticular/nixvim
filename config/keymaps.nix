@@ -5,34 +5,6 @@
       key = "<Esc>";
       action = "<cmd>nohlsearch<CR>";
     }
-    {
-      mode = "n";
-      key = "[d";
-      action = "vim.diagnostic.goto_prev";
-      lua = true;
-      options.desc = "Go to previous [D]iagnostic message";
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action = "vim.diagnostic.goto_next";
-      lua = true;
-      options.desc = "Go to next [D]iagnostic message";
-    }
-    {
-      mode = "n";
-      key = "<leader>e";
-      action = "vim.diagnostic.open_float";
-      lua = true;
-      options.desc = "Show diagnostic [E]rror messages";
-    }
-    {
-      mode = "n";
-      key = "<leader>q";
-      action = "vim.diagnostic.setloclist";
-      lua = true;
-      options.desc = "Open diagnostic [Q]uickfix list";
-    }
 
     {
       mode = "t";
