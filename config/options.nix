@@ -3,12 +3,14 @@
   globals.maplocalleader = " ";
 
   opts = {
+    fileformat = "unix";
     number = true;
     relativenumber = true;
     mouse = "a";
     showmode = false;
     clipboard = "unnamedplus";
     breakindent = true;
+    swapfile = false;
     undofile = true;
     ignorecase = true;
     smartcase = true;
@@ -25,7 +27,10 @@
     };
     inccommand = "split";
     cursorline = true;
+    cursorcolumn = true;
     scrolloff = 10;
+    sidescrolloff = 5;
     hlsearch = true;
+    foldcolumn = "auto";
   };
 }
