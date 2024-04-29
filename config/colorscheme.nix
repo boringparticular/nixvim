@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       flavour = "mocha";
-      termcolors = true;
+      term_colors = true;
       integrations = {
         cmp = true;
         gitsigns = true;
