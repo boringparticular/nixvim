@@ -28,6 +28,13 @@
     formattersByFt = {
       lua = ["stylua"];
       nix = ["alejandra"];
+      python = ["isort" "black"];
+      javascript = ["prettierd"];
+      typescript = ["prettierd"];
+      go = [["gofumpt" "gofmt"]];
+      just = ["just"];
+      "*" = ["injected"];
+      _ = ["trim_whitespace"];
     };
   };
 }
