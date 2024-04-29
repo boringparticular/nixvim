@@ -2,56 +2,8 @@
   imports = [
     ./plugins
     ./colorscheme.nix
+    ./options.nix
   ];
-  colorschemes.catppuccin = {
-    enable = true;
-    settings = {
-      flavour = "mocha";
-      termcolors = true;
-      integrations = {
-        cmp = true;
-        gitsigns = true;
-        flash = true;
-        mini = {
-          enabled = true;
-          indentscope_color = "lavender";
-        };
-        telescope.enabled = true;
-        treesitter = true;
-        which_key = true;
-      };
-    };
-  };
-
-  globals.mapleader = " ";
-  globals.maplocalleader = " ";
-
-  opts = {
-    number = true;
-    relativenumber = true;
-    mouse = "a";
-    showmode = false;
-    clipboard = "unnamedplus";
-    breakindent = true;
-    undofile = true;
-    ignorecase = true;
-    smartcase = true;
-    signcolumn = "yes";
-    updatetime = 250;
-    timeoutlen = 300;
-    splitright = true;
-    splitbelow = true;
-    list = true;
-    listchars = {
-      tab = "» ";
-      trail = "·";
-      nbsp = "␣";
-    };
-    inccommand = "split";
-    cursorline = true;
-    scrolloff = 10;
-    hlsearch = true;
-  };
 
   keymaps = [
     {
