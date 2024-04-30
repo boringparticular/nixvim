@@ -56,6 +56,12 @@
             max_item_count = 5;
           }
         ];
+        experimental.ghost_text = true;
+        view.entries = {
+          name = "custom";
+          selection_order = "near_cursor";
+          follow_cursor = true;
+        };
       };
     };
     cmp-buffer.enable = true;
