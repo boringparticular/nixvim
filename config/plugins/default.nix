@@ -16,6 +16,7 @@
   plugins = {
     comment.enable = true;
     fidget.enable = true;
+    friendly-snippets.enable = true;
     sleuth.enable = true;
   };
 
