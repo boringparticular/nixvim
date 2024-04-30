@@ -70,6 +70,10 @@
           selection_order = "near_cursor";
           follow_cursor = true;
         };
+        window = {
+          completion.__raw = "cmp.config.window.bordered()";
+          documentation.__raw = "cmp.config.window.bordered()";
+        };
       };
     };
     cmp-buffer.enable = true;
