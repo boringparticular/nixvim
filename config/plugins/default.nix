@@ -5,10 +5,11 @@
     ./gitsigns.nix
     ./lsp.nix
     ./mini.nix
+    ./neorg.nix
+    ./sourcegraph.nix
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
-    ./sourcegraph.nix
     ./which-key.nix
   ];
 
