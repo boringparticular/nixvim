@@ -32,13 +32,29 @@
         sources = [
           {name = "cody";}
           {name = "nvim_lsp";}
+          {name = "nvim_lsp_signature_help";}
+          {name = "nvim_lsp_document_symbol";}
           {name = "luasnip";}
-          {name = "path";}
+          {name = "nvim_lua";}
+          {
+            name = "buffer";
+            keyword_length = 5;
+          }
+          {name = "treesitter";}
+          {
+            name = "path";
+            max_item_count = 5;
+          }
         ];
       };
     };
+    cmp-buffer.enable = true;
     cmp_luasnip.enable = true;
+    cmp-treesitter.enable = true;
+    cmp-nvim-lua.enable = true;
     cmp-nvim-lsp.enable = true;
+    cmp-nvim-lsp-signature-help.enable = true;
+    cmp-nvim-lsp-document-symbol.enable = true;
     cmp-path.enable = true;
   };
 }
