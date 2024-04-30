@@ -75,6 +75,44 @@
           documentation.__raw = "cmp.config.window.bordered()";
         };
       };
+      cmdline = {
+        "/" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {
+              name = "buffer";
+            }
+          ];
+        };
+        "?" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {
+              name = "buffer";
+            }
+          ];
+        };
+        ":" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {
+              name = "path";
+            }
+            {
+              name = "cmdline";
+              option = {
+                ignore_cmds = ["Man" "!"];
+              };
+            }
+          ];
+        };
+      };
     };
     cmp-buffer.enable = true;
     cmp_luasnip.enable = true;
