@@ -18,6 +18,7 @@
     emmet.enable = true;
     fidget.enable = true;
     friendly-snippets.enable = true;
+    notify.enable = true;
     sleuth.enable = true;
   };
 
