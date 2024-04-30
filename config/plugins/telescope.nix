@@ -3,28 +3,36 @@
     {
       mode = "n";
       key = "<leader>/";
-      action = ''
-        function()
-          require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-              winblend = 10,
-              previewer = false,
-          }))
-        end
-      '';
+      action =
+        /*
+        lua
+        */
+        ''
+          function()
+            require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+                winblend = 10,
+                previewer = false,
+            }))
+          end
+        '';
       lua = true;
       options.desc = "[/] Fuzzily search in current buffer";
     }
     {
       mode = "n";
       key = "<leader>s/";
-      action = ''
-        function()
-          require("telescope.builtin").live_grep({
-            grep_open_files = true,
-            prompt_title = 'Live Grep in Open Files',
-          })
-        end
-      '';
+      action =
+        /*
+        lua
+        */
+        ''
+          function()
+            require("telescope.builtin").live_grep({
+              grep_open_files = true,
+              prompt_title = 'Live Grep in Open Files',
+            })
+          end
+        '';
       lua = true;
       options.desc = "[S]earch [/] in Open Files";
     }
