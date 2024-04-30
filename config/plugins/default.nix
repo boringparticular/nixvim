@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./blankline.nix
     ./cmp.nix
     ./conform.nix
     ./gitsigns.nix
