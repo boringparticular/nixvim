@@ -30,9 +30,9 @@
   extraFiles = {
     "after/queries/nix/injections.scm" = lib.mkDefault (lib.mkAfter ''
       ;extends
-      ((binding [(comment) @c (indented_string_expression) @injection.content])
-      (#eq? c "pyhon")
-      (#set! injection.language "python"))
+      (binding [(comment) @c (indented_string_expression) @injection.content]
+        (#eq? c "pyhon")
+        (#set! injection.language "python"))
     '');
   };
 }
