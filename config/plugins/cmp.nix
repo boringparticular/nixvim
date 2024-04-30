@@ -1,5 +1,15 @@
 {
   plugins = {
+    lspkind.cmp = {
+      enable = true;
+      menu = {
+        buffer = "[Buffer]";
+        nvim_lsp = "[LSP]";
+        luasnip = "[LuaSnip]";
+        nvim_lua = "[Lua]";
+        cody = "[cody]";
+      };
+    };
     cmp = {
       enable = true;
       settings = {
