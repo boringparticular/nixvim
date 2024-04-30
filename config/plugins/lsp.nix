@@ -1,4 +1,58 @@
 {
+  autoGroups = {
+    boring-lsp-attach.clear = true;
+    boring-lsp-detach.clear = true;
+  };
+
+  autoCmd = [
+    {
+      event = "LspAttach";
+      group = "boring-lsp-attach";
+      callback = {
+        __raw =
+          /*
+          lua
+          */
+          ''
+            function(event)
+                local client = vim.lsp.get_client_by_id(event.data.client_id)
+
+                if client and client.server_capabilities.documentHighlightProvider then
+                  local highlight_augroup = vim.api.nvim_create_augroup('boring-lsp-highlight', { clear = true })
+                  vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
+                    buffer = event.buf,
+                    group = highlight_augroup,
+                    callback = vim.lsp.buf.document_highlight,
+                  })
+
+                  vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
+                    buffer = event.buf,
+                    group = highlight_augroup,
+                    callback = vim.lsp.buf.clear_references,
+                  })
+                end
+            end
+          '';
+      };
+    }
+    {
+      event = "LspDetach";
+      group = "boring-lsp-detach";
+      callback = {
+        __raw =
+          /*
+          lua
+          */
+          ''
+            function(event)
+              vim.lsp.buf.clear_references()
+              vim.api.nvim_clear_autocmds({ group = 'boring-lsp-highlight', buffer = event.buf })
+            end
+          '';
+      };
+    }
+  ];
+
   plugins.lsp = {
     enable = true;
     servers = {
