@@ -34,6 +34,7 @@
           '';
         };
         sources = [
+          {name = "cody";}
           {name = "nvim_lsp";}
           {name = "luasnip";}
           {name = "path";}

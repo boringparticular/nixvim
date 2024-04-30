@@ -8,6 +8,7 @@
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
+    ./sourcegraph.nix
     ./which-key.nix
   ];
 
