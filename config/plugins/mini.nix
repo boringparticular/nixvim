@@ -8,6 +8,7 @@
       #  - yinq - [Y]ank [I]nside [N]ext [']quote
       #  - ci'  - [C]hange [I]nside [']quote
       ai = {n_lines = 500;};
+      files = {};
       # Add/delete/replace surroundings (brackets, quotes, etc.)
       #
       # - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
