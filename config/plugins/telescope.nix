@@ -39,6 +39,15 @@
   ];
   plugins.telescope = {
     enable = true;
+    settings = {
+      defaults = {
+        file_ignore_patterns = [
+          "^.git/"
+          "^.venv/"
+          "^node_modules/"
+        ];
+      };
+    };
     extensions = {
       fzf-native.enable = true;
       ui-select = {
