@@ -19,6 +19,7 @@
     fidget.enable = true;
     friendly-snippets.enable = true;
     notify.enable = true;
+    rainbow-delimiters.enable = true;
     sleuth.enable = true;
   };
 
