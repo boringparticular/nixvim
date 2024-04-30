@@ -31,6 +31,11 @@
                     callback = vim.lsp.buf.clear_references,
                   })
                 end
+                if client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+                  vim.keymap.set('n', '<leader>th', function()
+                    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+                  end, { desc = 'LSP [T]oggle Inlay [H]ints' })
+                end
             end
           '';
       };
