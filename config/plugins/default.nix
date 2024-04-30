@@ -16,6 +16,7 @@
 
   plugins = {
     comment.enable = true;
+    direnv.enable = true;
     emmet.enable = true;
     fidget.enable = true;
     friendly-snippets.enable = true;
