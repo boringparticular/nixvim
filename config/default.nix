@@ -7,7 +7,7 @@
   ];
 
   autoGroups = {
-    kickstart-highlight-yank = {
+    boring-highlight-yank = {
       clear = true;
     };
   };
@@ -15,7 +15,7 @@
   autoCmd = [
     {
       event = "TextYankPost";
-      group = "kickstart-highlight-yank";
+      group = "boring-highlight-yank";
       callback = {
         __raw = ''
           function()
