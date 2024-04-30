@@ -6,6 +6,7 @@
     ./lsp.nix
     ./mini.nix
     ./neorg.nix
+    ./oil.nix
     ./sourcegraph.nix
     ./telescope.nix
     ./todo-comments.nix
